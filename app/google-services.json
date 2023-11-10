@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989261147483",
+    "project_id": "imunku-e1480",
+    "storage_bucket": "imunku-e1480.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989261147483:android:3e88ec0482ae563d877e7e",
+        "android_client_info": {
+          "package_name": "com.example.imunku"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB98F3XfiQUn9R0CwJmi5IAN8nTY3CJLiQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
