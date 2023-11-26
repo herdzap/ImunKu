@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB">
+
+    <Button
+        android:id="@+id/backbutton_imunisasi"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/back_button"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tentang Kami "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="201dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="79dp"
+        android:background="@drawable/foto2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:padding="40dp"
+        android:text="Imunku adalah aplikasi yang memungkinkan pengguna untuk melakukan upload dan melihat hasil vaksin balita. Aplikasi ini dikembangkan untuk menyelesaikan tugas project akhir mata kuliah Pemrograman Aplikasi Perangkat Bergerak kelas E yang diampu oleh Bapak Eriq Muhammad Adams Jonemaro, S.T., M.Kom.. Dengan dikembangkannya aplikasi Imunku ini, diharapkan tim pengembang yaitu Alka Alvin Fauzi dan Hernanda Dzaki Permana bisa mendapatkan nilai yang memuaskan, aamiin."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/gambar"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/gambar"
+        app:layout_constraintTop_toBottomOf="@id/gambar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
