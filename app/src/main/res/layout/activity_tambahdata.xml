@@ -42,7 +42,7 @@
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/bg_form_vaksin"
                 android:ems="10"
-                android:hint="@string/nama_anak"
+                android:hint="@string/namaanak"
                 android:inputType="textPersonName"
                 android:padding="12dp" />
 
