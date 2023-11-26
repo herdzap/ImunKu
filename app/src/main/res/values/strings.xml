@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ImunKu</string>
+    <string name="imunisasi">Imunisasi</string>
+    <string name="daftar">Daftar</string>
+    <string name="nama_anak">Nama anak</string>
+    <string name="umur_anak">Umur anak</string>
+    <string name="tanggal_lahir">Tanggal lahir</string>
+    <string name="tanggal_vaksin">Tanggal vaksin</string>
 </resources>
