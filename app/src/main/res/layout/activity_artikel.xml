@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFB"
+    tools:context=".ArtikelActivity">
+
+    <Button
+        android:id="@+id/backbutton_imunisasi"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:background="@drawable/back_button"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="177dp"
+        android:text="Artikel"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/bannerartikel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dp"
+        android:background="@drawable/bannerartikel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:paddingTop="20dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:text="Imunisasi adalah upaya pencegahan penyakit menular dengan memberikan “vaksin” sehingga terjadi imunitas (kekebalan) terhadap penyakit tersebut. Vaksin adalah jenis bakteri atau virus yang sudah dilemahkan atau dimatikan guna merangsang sistem imun dengan membentuk zat antibodi di dalam tubuh. Antibodi inilah yang melindungi tubuh di masa yang akan datang. Imunisasi adalah proses pembentukan zat antibodi secara aktif atau buatan melalui pemberian vaksin (bakteri dan virus yang sudah lemah). Imunisasi suatu proses yang membuat seseorang imun atau kebal terhadap suatu penyakit melalui pemberian vaksin yang merangsang sistem kekebalan tubuh membentuk antibodi supaya kebal terhadap penyakit tertentu.
+&#xA; &#xA; Manfaat imunisasi bagi bayi dan anak jauh lebih besar dibandingkan risiko efek sampingnya. Melindungi tubuh bayi / anak dari serangan dan ancaman bakteri / virus penyakit tertentu, mencegah anak dari tertular penyakit yang disebabkan oleh bakteri / virus serta meningkatkan kekebalan tubuh terhadap penyakit-penyakit tertentu dan meningkatkan status kesehatan bayi / anak yang berdampak pada kualitas tumbuh kembang dan produktivitas sumber daya manusia di masa depan."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/bannerartikel"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/bannerartikel"
+        app:layout_constraintTop_toBottomOf="@id/bannerartikel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
