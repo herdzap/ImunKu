@@ -17,7 +17,7 @@ public class BerandaActivity extends AppCompatActivity implements View.OnClickLi
 
     TextView textKeluar;
 
-    FirebaseAuth fAuth;
+    FirebaseAuth ImunAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class BerandaActivity extends AppCompatActivity implements View.OnClickLi
         textKeluar = findViewById(R.id.textLogout);
         textKeluar.setOnClickListener(this);
 
-        fAuth = FirebaseAuth.getInstance();
+        ImunAuth = FirebaseAuth.getInstance();
 
     }
 
@@ -52,8 +52,9 @@ public class BerandaActivity extends AppCompatActivity implements View.OnClickLi
             Intent MenuArtikel = new Intent(this, ArtikelActivity.class);
             startActivity(MenuArtikel);
         } else if (idView == R.id.textLogout) {
-            fAuth.signOut();
-            finish();
+            ImunAuth.signOut();
+            Intent keluar = new Intent(this, LoginActivity.class );
+            startActivity(keluar);
         }
     }
 }
