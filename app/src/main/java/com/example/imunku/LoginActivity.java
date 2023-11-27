@@ -47,13 +47,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         } else if (viewId == R.id.daftar) {
             //method register;
+            registrasi();
         } else {
 
         }
     }
 
     //Buat Method register
-
+    private void registrasi(){
+        Intent registerIntent = new Intent(this, RegistrasiActivity.class);
+        startActivity(registerIntent);
+    }
     //Method buat login
     private void login() {
         String emailInput = email.getText().toString();
