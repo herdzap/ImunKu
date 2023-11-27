@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:paddingTop="9dp"
     android:paddingBottom="14dp"
-    tools:context=".itemImunisasi">
+    android:id="@+id/item_Imunisasi">
+
 
     <ImageView
         android:id="@+id/iconList"
@@ -42,7 +43,7 @@
 
 
     <TextView
-        android:id="@+id/waktu_vaksin_card"
+        android:id="@+id/waktuVaksin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"

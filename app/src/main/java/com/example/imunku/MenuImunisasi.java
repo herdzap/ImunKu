@@ -28,8 +28,6 @@ public class MenuImunisasi extends AppCompatActivity implements View.OnClickList
     FirebaseAuth ImunAuth;
     FirebaseDatabase DBImun;
 
-    ArrayList<itemImunisasi> imunisasiArrayList;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
