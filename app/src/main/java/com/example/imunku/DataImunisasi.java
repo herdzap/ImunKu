@@ -33,6 +33,8 @@ public class DataImunisasi implements Parcelable {
         vaksinKe = in.readInt();
         idGambar = in.readString();
     }
+    public DataImunisasi() {}
+
 
     public DataImunisasi(String namaAnak, int umur, int hariLahir, int bulanLahir, int tahunLahir,
                      int hariVaksin, int bulanVaksin, int tahunVaksin, String jenisVaksin, int vaksinKe, String idGambar) {
@@ -135,6 +137,15 @@ public class DataImunisasi implements Parcelable {
     public void setTahunVaksin(int tahunVaksin) {
         this.tahunVaksin = tahunVaksin;
     }
+
+    public String getIdGambar() {
+        return idGambar;
+    }
+
+    public void setidGambar(String idGambar) {
+        this.idGambar = idGambar;
+    }
+
 
     public static final Creator<DataImunisasi> CREATOR = new Creator<DataImunisasi>() {
         @Override
