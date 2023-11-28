@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.Firebase;
 import com.google.firebase.auth.FirebaseAuth;
@@ -52,6 +53,7 @@ public class BerandaActivity extends AppCompatActivity implements View.OnClickLi
             Intent MenuArtikel = new Intent(this, ArtikelActivity.class);
             startActivity(MenuArtikel);
         } else if (idView == R.id.textLogout) {
+            Toast.makeText(this, "LogOut Berhasil",Toast.LENGTH_SHORT).show();
             ImunAuth.signOut();
             Intent keluar = new Intent(this, LoginActivity.class );
             startActivity(keluar);

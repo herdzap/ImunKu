@@ -24,6 +24,15 @@ public class itemImunisasi extends RecyclerView.Adapter<RecyclerView.ViewHolder>
         this.context = context;
     }
 
+    public void setItems(ArrayList<DataImunisasi> listImunisasi) {
+        this.listImunisasi = listImunisasi;
+    }
+
+    public void setFilteredList(ArrayList<DataImunisasi> filteredListImun) {
+        this.listImunisasi = filteredListImun;
+        notifyDataSetChanged();
+    }
+
     public static class imunisasiVH extends RecyclerView.ViewHolder {
         TextView jenisVaksin;
         TextView nama;
