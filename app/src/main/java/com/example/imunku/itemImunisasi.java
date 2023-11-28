@@ -66,7 +66,7 @@ public class itemImunisasi extends RecyclerView.Adapter<RecyclerView.ViewHolder>
 
         iVH.listVaksin.setOnClickListener(view -> {
             Intent goEdit = new Intent(this.context, DataVaksinActivity.class);
-            goEdit.putExtra("dataImunisasi",curImunisasi);
+            goEdit.putExtra("DataImunisasi",curImunisasi);
             this.context.startActivity(goEdit);
         });
     }
