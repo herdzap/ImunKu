@@ -170,10 +170,6 @@ public class InsertVaksinActivity extends AppCompatActivity implements AdapterVi
         }
     }
     @Override
-    protected void onStart() {
-        super.onStart();
-    }
-    @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         int id = adapterView.getId();
         if (id == R.id.jenisVaksin) {
@@ -336,12 +332,6 @@ public class InsertVaksinActivity extends AppCompatActivity implements AdapterVi
 
                 Toast.makeText(InsertVaksinActivity.this, "Ubah " +
                         "data berhasil!", Toast.LENGTH_SHORT).show();
-//                intent.putExtra("data_imunisasi", imunisasi);
-//                if (getParent() == null) {
-//                    setResult(Activity.RESULT_OK, intent);
-//                } else {
-//                    getParent().setResult(Activity.RESULT_OK, intent);
-//                }
             }
 
             @Override
@@ -364,7 +354,7 @@ public class InsertVaksinActivity extends AppCompatActivity implements AdapterVi
     public void onBackPressed() {
         Intent intent = new Intent();
         Log.d(TAG, "onBackPressed: "+cloneImunisasi[0].getIdGambar());
-        intent.putExtra("data_imunisasi", cloneImunisasi[0]);
+        intent.putExtra("DataImunisasi", cloneImunisasi[0]);
         if (getParent() == null) {
             setResult(Activity.RESULT_OK, intent);
         } else {

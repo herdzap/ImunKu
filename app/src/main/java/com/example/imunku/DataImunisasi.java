@@ -62,8 +62,8 @@ public class DataImunisasi implements Parcelable {
         return nama;
     }
 
-    public void setNamaAnak(String namaAnak) {
-        this.nama = namaAnak;
+    public void setNamaAnak(String nama) {
+        this.nama = nama;
     }
 
     public int getUmur() {
@@ -142,10 +142,9 @@ public class DataImunisasi implements Parcelable {
         return idGambar;
     }
 
-    public void setidGambar(String idGambar) {
+    public void setIdGambar(String idGambar) {
         this.idGambar = idGambar;
     }
-
 
     public static final Creator<DataImunisasi> CREATOR = new Creator<DataImunisasi>() {
         @Override
